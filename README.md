@@ -65,7 +65,7 @@ Elements of `static` and `relative` position follows the document flow, while th
 
 #### How to position horizontally and vertically
 
-My cheatsheet of centering: [How to Center Anything in CSS](./center-everything.html)
+My cheatsheet of centering: [How to Center Anything in CSS](https://tanyuexi.github.io/frontend-mentor-profile-card-component/center-everything.html)
 
 #### How to crop an image to parent div
 
