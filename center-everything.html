@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .blue-container {
+        background-color: blue;
+        width: 100%;
+        height: 150px;
+      }
+
+      .orange-target {
+        background-color: orange;
+      }
+
+      .display-block {
+        display: block;
+      }
+
+      .display-inline {
+        display: inline;
+      }
+
+      .fixed-width {
+        width: 200px;
+      }
+
+      .fixed-height {
+        height: 100px;
+      }
+
+      .text-align-center {
+        text-align: center;
+      }
+
+      .position-relative-or-static {
+        position: relative;
+      }
+
+      .position-absolute-or-fixed {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -100px;
+      }
+
+      .margin-auto {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>How to Center Anything in CSS</h1>
+    <hr>
+
+    <h2 id="centerTextHorizontal">To center texts horizontally</h2>
+    <p>Parent class</p>
+    <ol>
+      <li>text-align: center;</li>
+    </ol>
+    <p>Target class</p>
+    <ol>
+      <li>display: block;  // default</li>
+    </ol>
+    <div class="blue-container text-align-center">
+      <p class="orange-target display-block">This is p</p>
+    </div>
+    <hr>
+
+    <h2 id="centerBlockHorizontal">To center blocks horizontally</h2>
+    <p>Parent class</p>
+    <ol>
+      <li>text-align: center;</li>
+    </ol>
+    <p>Target class</p>
+    <ol>
+      <li>display: block;  // default</li>
+    </ol>
+    <div class="blue-container text-align-center">
+      <div class="orange-target display-block"><img src="image.png"></div>
+    </div>
+    <hr>
+
+    <h2 id="centerFixedSizeBlockHorizontal">To center blocks of fixed sizes horizontally</h2>
+    <p>Parent class</p>
+    <p>Target class</p>
+    <ol>
+      <li>display: block;  // default</li>
+      <li>width: 200px;</li>
+      <li>margin: auto;</li>
+    </ol>
+    <div class="blue-container">
+      <div class="orange-target display-block fixed-width margin-auto"><img src="image.png"></div>
+    </div>
+    <hr>
+
+    <h2 id="centerFixedSizeAnything">To center anything of a fixed size horizontally and vertically</h2>
+    <p>Parent class</p>
+    <ol>
+      <li>position: relative;</li>
+    </ol>
+    <p>Target class</p>
+    <ol>
+      <li>position: absolute/fixed;  //out of layout flow</li>
+      <li>width: 200px;</li>
+      <li>height: 100px;</li>
+      <li>top: 50%;</li>
+      <li>left: 50%;</li>
+      <li>margin-top: -50px;  //half height</li>
+      <li>margin-left: -100px;  //half width</li>
+    </ol>
+    <div class="blue-container position-relative-or-static">
+      <div class="orange-target position-absolute-or-fixed fixed-width fixed-height"><img src="image.png"></div>
+    </div>
+    <hr>
+
+  </body>
+</html>
